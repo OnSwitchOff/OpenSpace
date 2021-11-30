@@ -3,13 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title>Open Space</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
     <div class="space">
         <div class="planet-area">
-            <img class="planet" src="img/mars.png">
-            <img class="rocket" src="img/rocket.png">
+			<img class="planet" src="img/mars.png" alt="planet">
+            <img class="rocket" src="img/rocket.png" alt="rocket">
+        </div>
+        <div class="control-panel">
+			<div class="control-panel__inner">
+				<input type="password" class="textInput" placeholder="Enter password to unlock" />
+				<input type="button" value="ok" onclick="okBtnClick()">
+				<div class="check-buttons">
+					<input type="checkbox" name="n1" disabled />
+					<input type="checkbox" name="n2" disabled />
+					<input type="checkbox" name="n3" disabled />
+					<input type="checkbox" name="n4" disabled />
+					<input type="checkbox" name="n5" disabled />
+					<input type="checkbox" name="n6" disabled />
+				</div>
+				<div class="levers">
+					<input type="range" name="l1" disabled onchange="setLaunchDisabled()"/>
+					<input type="range" name="l2" disabled onchange="setLaunchDisabled()"/>
+					<input type="range" name="l3" disabled onchange="setLaunchDisabled()"/>
+					<input type="range" name="l4" disabled onchange="setLaunchDisabled()"/>
+					<input type="range" name="l5" disabled onchange="setLaunchDisabled()"/>
+				</div>
+				<input type="button"  value="launch" disabled>
+			</div>
+			<script rel="script" src="index.js"></script>
         </div>
     </div>
 </body>

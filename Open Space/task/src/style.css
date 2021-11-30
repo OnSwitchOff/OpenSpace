@@ -6,20 +6,21 @@
 
 .space {
 	margin: 0 auto;
+	min-height: 725px;
 	width: 125vh;
+	min-width: 1000px;
 	height: 100vh;
 	background: url('img/space.png');
 	position: relative;
 }
 
-.plant-area {
+.planet-area {
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	width: 40%;
 	height: 80%;
 }
-
 
 .planet {
 	position: absolute;
@@ -35,3 +36,109 @@
 	height: 20%;
 	transform: rotate(22.5deg);
 }
+
+
+.control-panel {
+	position: absolute;
+	top: 35%;
+	right: 5%;
+	width: 40%;
+	border-radius: 5px;
+	background:repeating-linear-gradient(45deg, yellow, yellow 10px, black 10px, black 20px);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+}
+
+.control-panel__inner{
+	background: #111;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;	
+}
+
+.control-panel__inner>input[type=password] {
+	border-color: yellow;
+	border-radius: 5px;
+	border-width: 2px;
+	width: 50%;
+	margin: 0 0 0 20% ;
+	background: transparent;
+	color: yellow;
+}
+
+.control-panel__inner>input[value=ok] {
+	width: 8%;
+	min-width: 16px;
+	margin: 0 20% 0 2%;
+	background: yellow;
+	color: #111;
+	border-radius: 3px;
+	border-color: transparent;
+	padding: 2px;
+}
+
+.control-panel__inner>input[value=ok]:hover {
+	box-shadow: 0 0 10px #719ECE;
+}
+
+.textInput:focus {
+    outline: none !important;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+.control-panel__inner>input[value=launch] {
+	background-color: red;
+	border: 2px solid white;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	text-transform: capitalize;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 50%;
+	margin: 0 auto;
+	pointer-events: none;
+}
+
+.control-panel__inner>input[value=launch]:hover {
+	box-shadow: 0 0 10px #719ECE;
+}
+
+
+.check-buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 10px 0;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.check-buttons>input[type=check-buttons] {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 10px 0;
+}
+
+.levers {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 10px 0;
+	width: 80%;
+	height: 100px;
+	margin: 0 auto;
+}
+
+.levers>input[type=range] {
+    -webkit-appearance: slider-vertical; /* WebKit */
+}
+
